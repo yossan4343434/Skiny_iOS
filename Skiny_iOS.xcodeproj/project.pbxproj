@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ED63CD4F1B5A8E20005866FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */; };
-		ED63CD511B5A8E20005866FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD501B5A8E20005866FF /* ViewController.swift */; };
 		ED63CD541B5A8E20005866FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD521B5A8E20005866FF /* Main.storyboard */; };
 		ED63CD561B5A8E20005866FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD551B5A8E20005866FF /* Images.xcassets */; };
 		ED63CD591B5A8E20005866FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD571B5A8E20005866FF /* LaunchScreen.xib */; };
@@ -31,7 +30,6 @@
 		ED63CD491B5A8E20005866FF /* Skiny_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skiny_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED63CD4D1B5A8E20005866FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED63CD501B5A8E20005866FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED63CD531B5A8E20005866FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED63CD551B5A8E20005866FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED63CD581B5A8E20005866FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 			children = (
 				ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */,
 				ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */,
-				ED63CD501B5A8E20005866FF /* ViewController.swift */,
 				ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */,
 				ED63CD521B5A8E20005866FF /* Main.storyboard */,
 				ED63CD551B5A8E20005866FF /* Images.xcassets */,
@@ -220,7 +217,6 @@
 			files = (
 				ED63CD6F1B5A92A5005866FF /* SKCosmetic.swift in Sources */,
 				ED63CD711B5A95CE005866FF /* SKCosmeticListViewController.swift in Sources */,
-				ED63CD511B5A8E20005866FF /* ViewController.swift in Sources */,
 				ED63CD4F1B5A8E20005866FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
