@@ -18,6 +18,9 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         dummyContents = ["hoge", "foo", "bar"]
 
+        let nib: UINib = UINib(nibName: "SKCosmeticListCell", bundle: nil)
+        cosmeticListTableView.registerNib(nib, forCellReuseIdentifier: "cosmeticListCell")
+
         cosmeticListTableView.delegate = self
         cosmeticListTableView.dataSource = self
     }
@@ -31,9 +34,13 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell: SKCosmeticListCell = tableView.dequeueReusableCellWithIdentifier("cosmeticListCell", forIndexPath: indexPath) as! SKCosmeticListCell
 
         return cell
+    }
+
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return SKCosmeticListCell.cellHeight()
     }
 
 }
