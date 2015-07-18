@@ -14,6 +14,7 @@
 		ED63CD591B5A8E20005866FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD571B5A8E20005866FF /* LaunchScreen.xib */; };
 		ED63CD651B5A8E20005866FF /* Skiny_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD641B5A8E20005866FF /* Skiny_iOSTests.swift */; };
 		ED63CD6F1B5A92A5005866FF /* SKCosmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */; };
+		ED63CD711B5A95CE005866FF /* SKCosmeticListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		ED63CD631B5A8E20005866FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED63CD641B5A8E20005866FF /* Skiny_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skiny_iOSTests.swift; sourceTree = "<group>"; };
 		ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCosmetic.swift; sourceTree = "<group>"; };
+		ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCosmeticListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		ED63CD4B1B5A8E20005866FF /* Skiny_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */,
 				ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */,
 				ED63CD501B5A8E20005866FF /* ViewController.swift */,
 				ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED63CD6F1B5A92A5005866FF /* SKCosmetic.swift in Sources */,
+				ED63CD711B5A95CE005866FF /* SKCosmeticListViewController.swift in Sources */,
 				ED63CD511B5A8E20005866FF /* ViewController.swift in Sources */,
 				ED63CD4F1B5A8E20005866FF /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +419,7 @@
 				ED63CD6A1B5A8E20005866FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED63CD6B1B5A8E20005866FF /* Build configuration list for PBXNativeTarget "Skiny_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				ED63CD6D1B5A8E20005866FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
