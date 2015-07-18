@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED63CD4F1B5A8E20005866FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */; };
+		ED63CD511B5A8E20005866FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD501B5A8E20005866FF /* ViewController.swift */; };
+		ED63CD541B5A8E20005866FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD521B5A8E20005866FF /* Main.storyboard */; };
+		ED63CD561B5A8E20005866FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD551B5A8E20005866FF /* Images.xcassets */; };
+		ED63CD591B5A8E20005866FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD571B5A8E20005866FF /* LaunchScreen.xib */; };
+		ED63CD651B5A8E20005866FF /* Skiny_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD641B5A8E20005866FF /* Skiny_iOSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED63CD5F1B5A8E20005866FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED63CD411B5A8E20005866FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED63CD481B5A8E20005866FF;
+			remoteInfo = Skiny_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED63CD491B5A8E20005866FF /* Skiny_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skiny_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED63CD4D1B5A8E20005866FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED63CD501B5A8E20005866FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED63CD531B5A8E20005866FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED63CD551B5A8E20005866FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ED63CD581B5A8E20005866FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ED63CD5E1B5A8E20005866FF /* Skiny_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Skiny_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED63CD631B5A8E20005866FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED63CD641B5A8E20005866FF /* Skiny_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skiny_iOSTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED63CD461B5A8E20005866FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED63CD5B1B5A8E20005866FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED63CD401B5A8E20005866FF = {
+			isa = PBXGroup;
+			children = (
+				ED63CD4B1B5A8E20005866FF /* Skiny_iOS */,
+				ED63CD611B5A8E20005866FF /* Skiny_iOSTests */,
+				ED63CD4A1B5A8E20005866FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED63CD4A1B5A8E20005866FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED63CD491B5A8E20005866FF /* Skiny_iOS.app */,
+				ED63CD5E1B5A8E20005866FF /* Skiny_iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED63CD4B1B5A8E20005866FF /* Skiny_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */,
+				ED63CD501B5A8E20005866FF /* ViewController.swift */,
+				ED63CD521B5A8E20005866FF /* Main.storyboard */,
+				ED63CD551B5A8E20005866FF /* Images.xcassets */,
+				ED63CD571B5A8E20005866FF /* LaunchScreen.xib */,
+				ED63CD4C1B5A8E20005866FF /* Supporting Files */,
+			);
+			path = Skiny_iOS;
+			sourceTree = "<group>";
+		};
+		ED63CD4C1B5A8E20005866FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED63CD4D1B5A8E20005866FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED63CD611B5A8E20005866FF /* Skiny_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED63CD641B5A8E20005866FF /* Skiny_iOSTests.swift */,
+				ED63CD621B5A8E20005866FF /* Supporting Files */,
+			);
+			path = Skiny_iOSTests;
+			sourceTree = "<group>";
+		};
+		ED63CD621B5A8E20005866FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED63CD631B5A8E20005866FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED63CD481B5A8E20005866FF /* Skiny_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED63CD681B5A8E20005866FF /* Build configuration list for PBXNativeTarget "Skiny_iOS" */;
+			buildPhases = (
+				ED63CD451B5A8E20005866FF /* Sources */,
+				ED63CD461B5A8E20005866FF /* Frameworks */,
+				ED63CD471B5A8E20005866FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skiny_iOS;
+			productName = Skiny_iOS;
+			productReference = ED63CD491B5A8E20005866FF /* Skiny_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED63CD5D1B5A8E20005866FF /* Skiny_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED63CD6B1B5A8E20005866FF /* Build configuration list for PBXNativeTarget "Skiny_iOSTests" */;
+			buildPhases = (
+				ED63CD5A1B5A8E20005866FF /* Sources */,
+				ED63CD5B1B5A8E20005866FF /* Frameworks */,
+				ED63CD5C1B5A8E20005866FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED63CD601B5A8E20005866FF /* PBXTargetDependency */,
+			);
+			name = Skiny_iOSTests;
+			productName = Skiny_iOSTests;
+			productReference = ED63CD5E1B5A8E20005866FF /* Skiny_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED63CD411B5A8E20005866FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Gruppy;
+				TargetAttributes = {
+					ED63CD481B5A8E20005866FF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					ED63CD5D1B5A8E20005866FF = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = ED63CD481B5A8E20005866FF;
+					};
+				};
+			};
+			buildConfigurationList = ED63CD441B5A8E20005866FF /* Build configuration list for PBXProject "Skiny_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED63CD401B5A8E20005866FF;
+			productRefGroup = ED63CD4A1B5A8E20005866FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED63CD481B5A8E20005866FF /* Skiny_iOS */,
+				ED63CD5D1B5A8E20005866FF /* Skiny_iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED63CD471B5A8E20005866FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED63CD541B5A8E20005866FF /* Main.storyboard in Resources */,
+				ED63CD591B5A8E20005866FF /* LaunchScreen.xib in Resources */,
+				ED63CD561B5A8E20005866FF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED63CD5C1B5A8E20005866FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED63CD451B5A8E20005866FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED63CD511B5A8E20005866FF /* ViewController.swift in Sources */,
+				ED63CD4F1B5A8E20005866FF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED63CD5A1B5A8E20005866FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED63CD651B5A8E20005866FF /* Skiny_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED63CD601B5A8E20005866FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED63CD481B5A8E20005866FF /* Skiny_iOS */;
+			targetProxy = ED63CD5F1B5A8E20005866FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED63CD521B5A8E20005866FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED63CD531B5A8E20005866FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED63CD571B5A8E20005866FF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED63CD581B5A8E20005866FF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED63CD661B5A8E20005866FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED63CD671B5A8E20005866FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED63CD691B5A8E20005866FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Skiny_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED63CD6A1B5A8E20005866FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Skiny_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ED63CD6C1B5A8E20005866FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Skiny_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skiny_iOS.app/Skiny_iOS";
+			};
+			name = Debug;
+		};
+		ED63CD6D1B5A8E20005866FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Skiny_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skiny_iOS.app/Skiny_iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED63CD441B5A8E20005866FF /* Build configuration list for PBXProject "Skiny_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED63CD661B5A8E20005866FF /* Debug */,
+				ED63CD671B5A8E20005866FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED63CD681B5A8E20005866FF /* Build configuration list for PBXNativeTarget "Skiny_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED63CD691B5A8E20005866FF /* Debug */,
+				ED63CD6A1B5A8E20005866FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED63CD6B1B5A8E20005866FF /* Build configuration list for PBXNativeTarget "Skiny_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED63CD6C1B5A8E20005866FF /* Debug */,
+				ED63CD6D1B5A8E20005866FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED63CD411B5A8E20005866FF /* Project object */;
+}
