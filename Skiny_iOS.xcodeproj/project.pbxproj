@@ -14,6 +14,8 @@
 		ED63CD651B5A8E20005866FF /* Skiny_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD641B5A8E20005866FF /* Skiny_iOSTests.swift */; };
 		ED63CD6F1B5A92A5005866FF /* SKCosmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */; };
 		ED63CD711B5A95CE005866FF /* SKCosmeticListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */; };
+		ED63CD741B5A9A67005866FF /* SKCosmeticListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD721B5A9A67005866FF /* SKCosmeticListCell.swift */; };
+		ED63CD751B5A9A67005866FF /* SKCosmeticListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD731B5A9A67005866FF /* SKCosmeticListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		ED63CD641B5A8E20005866FF /* Skiny_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skiny_iOSTests.swift; sourceTree = "<group>"; };
 		ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCosmetic.swift; sourceTree = "<group>"; };
 		ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCosmeticListViewController.swift; sourceTree = "<group>"; };
+		ED63CD721B5A9A67005866FF /* SKCosmeticListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCosmeticListCell.swift; sourceTree = "<group>"; };
+		ED63CD731B5A9A67005866FF /* SKCosmeticListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKCosmeticListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +83,12 @@
 		ED63CD4B1B5A8E20005866FF /* Skiny_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */,
+				ED63CD521B5A8E20005866FF /* Main.storyboard */,
 				ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */,
 				ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */,
-				ED63CD521B5A8E20005866FF /* Main.storyboard */,
+				ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */,
+				ED63CD721B5A9A67005866FF /* SKCosmeticListCell.swift */,
+				ED63CD731B5A9A67005866FF /* SKCosmeticListCell.xib */,
 				ED63CD551B5A8E20005866FF /* Images.xcassets */,
 				ED63CD571B5A8E20005866FF /* LaunchScreen.xib */,
 				ED63CD4C1B5A8E20005866FF /* Supporting Files */,
@@ -195,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED63CD751B5A9A67005866FF /* SKCosmeticListCell.xib in Resources */,
 				ED63CD541B5A8E20005866FF /* Main.storyboard in Resources */,
 				ED63CD591B5A8E20005866FF /* LaunchScreen.xib in Resources */,
 				ED63CD561B5A8E20005866FF /* Images.xcassets in Resources */,
@@ -217,6 +224,7 @@
 			files = (
 				ED63CD6F1B5A92A5005866FF /* SKCosmetic.swift in Sources */,
 				ED63CD711B5A95CE005866FF /* SKCosmeticListViewController.swift in Sources */,
+				ED63CD741B5A9A67005866FF /* SKCosmeticListCell.swift in Sources */,
 				ED63CD4F1B5A8E20005866FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
