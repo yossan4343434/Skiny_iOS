@@ -17,6 +17,9 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         dummyContents = ["hoge", "foo", "bar"]
+
+        cosmeticListTableView.delegate = self
+        cosmeticListTableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
