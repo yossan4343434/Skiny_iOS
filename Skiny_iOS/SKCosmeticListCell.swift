@@ -10,15 +10,21 @@ import UIKit
 
 class SKCosmeticListCell: UITableViewCell {
 
+    @IBOutlet weak var cosmeticImageView: UIImageView!
+    @IBOutlet weak var cosmeticCategoryLabel: UILabel!
+    @IBOutlet weak var cosmeticBrandLabel: UILabel!
+    @IBOutlet weak var cosmeticNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
 
-        // Configure the view for the selected state
+    class func cellHeight() -> CGFloat {
+        return 120
     }
     
 }

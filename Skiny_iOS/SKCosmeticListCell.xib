@@ -50,6 +50,12 @@
                     <constraint firstItem="fAl-VW-uiT" firstAttribute="top" secondItem="FZz-0h-Ee6" secondAttribute="bottom" constant="10" id="utR-cG-SMr"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="cosmeticBrandLabel" destination="fAl-VW-uiT" id="Mms-xf-lXM"/>
+                <outlet property="cosmeticCategoryLabel" destination="FZz-0h-Ee6" id="saE-wG-JJJ"/>
+                <outlet property="cosmeticImageView" destination="ngE-2U-L60" id="hoz-S0-cI1"/>
+                <outlet property="cosmeticNameLabel" destination="Pgz-DS-4rS" id="7xf-hM-QSe"/>
+            </connections>
             <point key="canvasLocation" x="499" y="443"/>
         </tableViewCell>
     </objects>
