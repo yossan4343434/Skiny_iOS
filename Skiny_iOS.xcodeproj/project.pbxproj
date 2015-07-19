@@ -19,6 +19,7 @@
 		ED63CD771B5B1984005866FF /* SKCosmeticDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD761B5B1984005866FF /* SKCosmeticDetailViewController.swift */; };
 		ED63CD7A1B5B249F005866FF /* SKIngredientListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD781B5B249F005866FF /* SKIngredientListCell.swift */; };
 		ED63CD7B1B5B249F005866FF /* SKIngredientListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD791B5B249F005866FF /* SKIngredientListCell.xib */; };
+		ED63CD7D1B5B2E3B005866FF /* SKIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD7C1B5B2E3B005866FF /* SKIngredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		ED63CD761B5B1984005866FF /* SKCosmeticDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCosmeticDetailViewController.swift; sourceTree = "<group>"; };
 		ED63CD781B5B249F005866FF /* SKIngredientListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIngredientListCell.swift; sourceTree = "<group>"; };
 		ED63CD791B5B249F005866FF /* SKIngredientListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKIngredientListCell.xib; sourceTree = "<group>"; };
+		ED63CD7C1B5B2E3B005866FF /* SKIngredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIngredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				ED63CD521B5A8E20005866FF /* Main.storyboard */,
 				ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */,
 				ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */,
+				ED63CD7C1B5B2E3B005866FF /* SKIngredient.swift */,
 				ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */,
 				ED63CD761B5B1984005866FF /* SKCosmeticDetailViewController.swift */,
 				ED63CD721B5A9A67005866FF /* SKCosmeticListCell.swift */,
@@ -237,6 +240,7 @@
 				ED63CD711B5A95CE005866FF /* SKCosmeticListViewController.swift in Sources */,
 				ED63CD741B5A9A67005866FF /* SKCosmeticListCell.swift in Sources */,
 				ED63CD7A1B5B249F005866FF /* SKIngredientListCell.swift in Sources */,
+				ED63CD7D1B5B2E3B005866FF /* SKIngredient.swift in Sources */,
 				ED63CD4F1B5A8E20005866FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
