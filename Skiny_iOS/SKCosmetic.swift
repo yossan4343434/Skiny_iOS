@@ -14,4 +14,5 @@ class SKCosmetic: NSObject {
     var brand = NSString()
     var category = NSString()
     var image = NSString()
+    var ingredients = [NSInteger]()
 }
