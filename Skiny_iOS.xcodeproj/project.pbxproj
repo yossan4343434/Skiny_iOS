@@ -17,6 +17,8 @@
 		ED63CD741B5A9A67005866FF /* SKCosmeticListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD721B5A9A67005866FF /* SKCosmeticListCell.swift */; };
 		ED63CD751B5A9A67005866FF /* SKCosmeticListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD731B5A9A67005866FF /* SKCosmeticListCell.xib */; };
 		ED63CD771B5B1984005866FF /* SKCosmeticDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD761B5B1984005866FF /* SKCosmeticDetailViewController.swift */; };
+		ED63CD7A1B5B249F005866FF /* SKIngredientListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD781B5B249F005866FF /* SKIngredientListCell.swift */; };
+		ED63CD7B1B5B249F005866FF /* SKIngredientListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD791B5B249F005866FF /* SKIngredientListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		ED63CD721B5A9A67005866FF /* SKCosmeticListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCosmeticListCell.swift; sourceTree = "<group>"; };
 		ED63CD731B5A9A67005866FF /* SKCosmeticListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKCosmeticListCell.xib; sourceTree = "<group>"; };
 		ED63CD761B5B1984005866FF /* SKCosmeticDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCosmeticDetailViewController.swift; sourceTree = "<group>"; };
+		ED63CD781B5B249F005866FF /* SKIngredientListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIngredientListCell.swift; sourceTree = "<group>"; };
+		ED63CD791B5B249F005866FF /* SKIngredientListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKIngredientListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				ED63CD761B5B1984005866FF /* SKCosmeticDetailViewController.swift */,
 				ED63CD721B5A9A67005866FF /* SKCosmeticListCell.swift */,
 				ED63CD731B5A9A67005866FF /* SKCosmeticListCell.xib */,
+				ED63CD781B5B249F005866FF /* SKIngredientListCell.swift */,
+				ED63CD791B5B249F005866FF /* SKIngredientListCell.xib */,
 				ED63CD551B5A8E20005866FF /* Images.xcassets */,
 				ED63CD571B5A8E20005866FF /* LaunchScreen.xib */,
 				ED63CD4C1B5A8E20005866FF /* Supporting Files */,
@@ -204,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED63CD7B1B5B249F005866FF /* SKIngredientListCell.xib in Resources */,
 				ED63CD751B5A9A67005866FF /* SKCosmeticListCell.xib in Resources */,
 				ED63CD541B5A8E20005866FF /* Main.storyboard in Resources */,
 				ED63CD591B5A8E20005866FF /* LaunchScreen.xib in Resources */,
@@ -229,6 +236,7 @@
 				ED63CD6F1B5A92A5005866FF /* SKCosmetic.swift in Sources */,
 				ED63CD711B5A95CE005866FF /* SKCosmeticListViewController.swift in Sources */,
 				ED63CD741B5A9A67005866FF /* SKCosmeticListCell.swift in Sources */,
+				ED63CD7A1B5B249F005866FF /* SKIngredientListCell.swift in Sources */,
 				ED63CD4F1B5A8E20005866FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
