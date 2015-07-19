@@ -11,6 +11,7 @@ import UIKit
 class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var dummyCosmetic = SKCosmetic()
+    var dummyIngredients = [SKIngredient]()
 
     @IBOutlet weak var cosmeticDetailTableView: UITableView!
 
@@ -24,6 +25,26 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
 
         cosmeticDetailTableView.delegate = self
         cosmeticDetailTableView.dataSource = self
+
+        loadData()
+    }
+
+    func loadData() {
+        if let path = NSBundle.mainBundle().pathForResource("dummy_contents", ofType: "json") {
+            if let jsonData = NSData(contentsOfFile: path) {
+                let jsonResult  = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
+                let jsonResultIngredients = jsonResult["ingredient"] as! NSArray
+
+                for ingredientId in dummyCosmetic.ingredientIds {
+                    var dummyIngredient = SKIngredient()
+
+                    dummyIngredient.id = jsonResultIngredients[ingredientId - 1]["id"] as! Int
+                    dummyIngredient.name = jsonResultIngredients[ingredientId - 1]["name"] as! String
+
+                    dummyIngredients.append(dummyIngredient)
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +59,7 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
         if section == 0 {
             return 1
         } else {
-            return 1
+            return dummyIngredients.count
         }
     }
 
@@ -55,6 +76,8 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("ingredientListCell", forIndexPath: indexPath) as! SKIngredientListCell
+
+            cell.ingredientNameLabel.text = dummyIngredients[indexPath.row].name as String
 
             return cell
         }

@@ -9,9 +9,10 @@
 import UIKit
 
 class SKCosmetic: NSObject {
-    var id = NSInteger()
-    var name = NSString()
-    var brand = NSString()
-    var category = NSString()
-    var image = NSString()
+    var id = Int()
+    var name = String()
+    var brand = String()
+    var category = String()
+    var image = String()
+    var ingredientIds = [Int]()
 }

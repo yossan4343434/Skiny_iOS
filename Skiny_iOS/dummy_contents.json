@@ -6,28 +6,32 @@
       "name": "化粧水・敏感肌用 しっとりタイプ",
       "brand": "無印良品",
       "category": "化粧水",
-      "image": "muji_sensitive_skin_light_toning_water_moisture"
+      "image": "muji_sensitive_skin_light_toning_water_moisture",
+      "ingredients": [1, 3, 4, 5]
     },
     {
       "id": 2,
       "name": "エイジング化粧水 さっぱりタイプ",
       "brand": "無印良品",
       "category": "化粧水",
-      "image": "muji_aging_light_toning_water_light"
+      "image": "muji_aging_light_toning_water_light",
+      "ingredients": [2, 1, 3, 4]
     },
     {
       "id": 3,
       "name": "オーガニック保湿化粧液",
       "brand": "無印良品",
       "category": "化粧液",
-      "image": "muji_moist_essence_lotion"
+      "image": "muji_moist_essence_lotion",
+      "ingredients": [2, 6, 5, 8]
     },
     {
       "id": 4,
       "name": "バランス肌用化粧水",
       "brand": "無印良品",
       "category": "化粧水",
-      "image": "muji_light_toning_water"
+      "image": "muji_light_toning_water",
+      "ingredients": [5, 4, 6, 9]
     }
   ],
 

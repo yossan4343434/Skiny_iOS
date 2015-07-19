@@ -27,6 +27,9 @@
                     <constraint firstAttribute="bottom" secondItem="xMK-FW-vFJ" secondAttribute="bottom" constant="15" id="lwj-Wx-z1i"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="ingredientNameLabel" destination="xMK-FW-vFJ" id="uk0-4b-Tih"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
