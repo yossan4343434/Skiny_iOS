@@ -77,6 +77,8 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("ingredientListCell", forIndexPath: indexPath) as! SKIngredientListCell
 
+            cell.ingredientNameLabel.text = dummyIngredients[indexPath.row].name as String
+
             return cell
         }
     }

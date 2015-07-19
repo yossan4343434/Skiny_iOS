@@ -10,6 +10,8 @@ import UIKit
 
 class SKIngredientListCell: UITableViewCell {
 
+    @IBOutlet weak var ingredientNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
