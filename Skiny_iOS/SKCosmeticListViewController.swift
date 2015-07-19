@@ -45,6 +45,7 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
                     dummyCosmetic.brand = jsonResultCosmetic["brand"] as! String
                     dummyCosmetic.category = jsonResultCosmetic["category"] as! String
                     dummyCosmetic.image = jsonResultCosmetic["image"] as! String
+                    dummyCosmetic.ingredientIds = jsonResultCosmetic["ingredients"] as! [Int]
 
                     dummyCosmetics.append(dummyCosmetic)
                 }
