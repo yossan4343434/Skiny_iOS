@@ -10,7 +10,7 @@ import UIKit
 
 class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var dummyContent = SKCosmetic()
+    var dummyCosmetic = SKCosmetic()
 
     @IBOutlet weak var cosmeticDetailTableView: UITableView!
 
@@ -45,6 +45,12 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier("cosmeticListCell", forIndexPath: indexPath) as! SKCosmeticListCell
+
+            cell.cosmeticNameLabel.text = dummyCosmetic.name as String
+            cell.cosmeticBrandLabel.text = dummyCosmetic.brand as String
+            cell.cosmeticCategoryLabel.text = dummyCosmetic.category as String
+            let imageName = NSString(string: dummyCosmetic.image as String)
+            cell.cosmeticImageView.image = UIImage(named: imageName as String)
 
             return cell
         } else {

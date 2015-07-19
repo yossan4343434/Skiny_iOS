@@ -11,6 +11,7 @@ import UIKit
 class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var dummyCosmetics = [SKCosmetic]()
+    var selectedCosmetic = SKCosmetic()
 
     @IBOutlet weak var cosmeticListTableView: UITableView!
     
@@ -74,8 +75,17 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedCosmetic = dummyCosmetics[indexPath.row]
         performSegueWithIdentifier("toCosmeticDetail", sender: nil)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toCosmeticDetail" {
+            var cosmeticDetailViewController = SKCosmeticDetailViewController()
+            cosmeticDetailViewController = segue.destinationViewController as! SKCosmeticDetailViewController
+            cosmeticDetailViewController.dummyCosmetic = selectedCosmetic
+        }
     }
 
 }
