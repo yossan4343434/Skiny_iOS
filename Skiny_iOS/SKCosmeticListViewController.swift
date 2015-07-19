@@ -94,10 +94,14 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
             var cosmeticDetailViewController = SKCosmeticDetailViewController()
             cosmeticDetailViewController = segue.destinationViewController as! SKCosmeticDetailViewController
             cosmeticDetailViewController.dummyCosmetic = selectedCosmetic
+        } else if segue.identifier == "toSelectCosmetic" {
+            var selectCosmeticViewController = SKSelectCosmeticViewController()
+            selectCosmeticViewController = segue.destinationViewController as! SKSelectCosmeticViewController
         }
     }
 
     func addCosmeticButtonTapped() {
+        performSegueWithIdentifier("toSelectCosmetic", sender: nil)
     }
 
 }
