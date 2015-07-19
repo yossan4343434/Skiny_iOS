@@ -68,6 +68,9 @@
                             <constraint firstAttribute="bottom" secondItem="2Qb-qB-7bE" secondAttribute="bottom" id="u4n-Ut-JTh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cosmeticDetailTableView" destination="2Qb-qB-7bE" id="aD9-lj-720"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HyC-o3-z5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
