@@ -35,11 +35,46 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cosmeticListTableView" destination="E3e-7f-aqB" id="NsZ-RE-APs"/>
+                        <segue destination="j7s-4w-XD7" kind="show" identifier="toCosmeticDetail" id="fJg-Jx-xL0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1036" y="-327"/>
+        </scene>
+        <!--Cosmetic Detail View Controller-->
+        <scene sceneID="Y8c-fT-oJe">
+            <objects>
+                <viewController id="j7s-4w-XD7" customClass="SKCosmeticDetailViewController" customModule="Skiny_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y8R-Vv-slo"/>
+                        <viewControllerLayoutGuide type="bottom" id="O7N-KS-4PU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C0f-zL-eiP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Qb-qB-7bE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2Qb-qB-7bE" secondAttribute="trailing" id="6sq-ol-ON6"/>
+                            <constraint firstItem="2Qb-qB-7bE" firstAttribute="top" secondItem="C0f-zL-eiP" secondAttribute="top" id="G8k-xw-tJl"/>
+                            <constraint firstItem="2Qb-qB-7bE" firstAttribute="leading" secondItem="C0f-zL-eiP" secondAttribute="leading" id="o7b-YZ-MZB"/>
+                            <constraint firstAttribute="bottom" secondItem="2Qb-qB-7bE" secondAttribute="bottom" id="u4n-Ut-JTh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cosmeticDetailTableView" destination="2Qb-qB-7bE" id="aD9-lj-720"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HyC-o3-z5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784" y="-327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dJs-OU-mg5">

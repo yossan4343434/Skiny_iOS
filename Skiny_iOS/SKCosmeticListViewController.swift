@@ -43,4 +43,9 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
         return SKCosmeticListCell.cellHeight()
     }
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("toCosmeticDetail", sender: nil)
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+
 }
