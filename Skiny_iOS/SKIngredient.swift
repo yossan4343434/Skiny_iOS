@@ -9,6 +9,6 @@
 import UIKit
 
 class SKIngredient: NSObject {
-    var id = NSInteger()
-    var name = NSString()
+    var id = Int()
+    var name = String()
 }
