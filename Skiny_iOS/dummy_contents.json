@@ -1,0 +1,73 @@
+{
+  "cosmetic": 
+  [
+    {
+      "id": 1,
+      "name": "化粧水・敏感肌用 しっとりタイプ",
+      "brand": "無印良品",
+      "category": "化粧水",
+      "image": "muji_sensitive_skin_light_toning_water_moisture"
+    },
+    {
+      "id": 2,
+      "name": "エイジング化粧水 さっぱりタイプ",
+      "brand": "無印良品",
+      "category": "化粧水",
+      "image": "muji_aging_light_toning_water_light"
+    },
+    {
+      "id": 3,
+      "name": "オーガニック保湿化粧液",
+      "brand": "無印良品",
+      "category": "化粧液",
+      "image": "muji_moist_essence_lotion"
+    },
+    {
+      "id": 4,
+      "name": "バランス肌用化粧水",
+      "brand": "無印良品",
+      "category": "化粧水",
+      "image": "muji_light_toning_water"
+    }
+  ],
+
+  "ingredient": 
+  [
+    {
+      "id": 1,
+      "name": "水"
+    },
+    {
+      "id": 2,
+      "name": "BG"
+    },
+    {
+      "id": 3,
+      "name": "ベヘニルアルコール"
+    },
+    {
+      "id": 4,
+      "name": "スクワラン"
+    },
+    {
+      "id": 5,
+      "name": "水添レシチン"
+    },
+    {
+      "id": 6,
+      "name": "グリセリン"
+    },
+    {
+      "id": 7,
+      "name": "アンズ果実エキス"
+    },
+    {
+      "id": 8,
+      "name": "ローズヒップ油"
+    },
+    {
+      "id": 9,
+      "name": "プルラン"
+    }
+  ]
+}

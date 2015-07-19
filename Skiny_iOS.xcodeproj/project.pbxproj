@@ -20,6 +20,7 @@
 		ED63CD7A1B5B249F005866FF /* SKIngredientListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD781B5B249F005866FF /* SKIngredientListCell.swift */; };
 		ED63CD7B1B5B249F005866FF /* SKIngredientListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD791B5B249F005866FF /* SKIngredientListCell.xib */; };
 		ED63CD7D1B5B2E3B005866FF /* SKIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED63CD7C1B5B2E3B005866FF /* SKIngredient.swift */; };
+		ED63CD7F1B5B30A4005866FF /* dummy_contents.json in Resources */ = {isa = PBXBuildFile; fileRef = ED63CD7E1B5B30A4005866FF /* dummy_contents.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		ED63CD781B5B249F005866FF /* SKIngredientListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIngredientListCell.swift; sourceTree = "<group>"; };
 		ED63CD791B5B249F005866FF /* SKIngredientListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKIngredientListCell.xib; sourceTree = "<group>"; };
 		ED63CD7C1B5B2E3B005866FF /* SKIngredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIngredient.swift; sourceTree = "<group>"; };
+		ED63CD7E1B5B30A4005866FF /* dummy_contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummy_contents.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				ED63CD4D1B5A8E20005866FF /* Info.plist */,
+				ED63CD7E1B5B30A4005866FF /* dummy_contents.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				ED63CD751B5A9A67005866FF /* SKCosmeticListCell.xib in Resources */,
 				ED63CD541B5A8E20005866FF /* Main.storyboard in Resources */,
 				ED63CD591B5A8E20005866FF /* LaunchScreen.xib in Resources */,
+				ED63CD7F1B5B30A4005866FF /* dummy_contents.json in Resources */,
 				ED63CD561B5A8E20005866FF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
