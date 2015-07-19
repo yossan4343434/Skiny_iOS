@@ -18,6 +18,9 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        var addCosmeticButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addCosmeticButtonTapped")
+        self.navigationItem.rightBarButtonItem = addCosmeticButton
+
         let nib: UINib = UINib(nibName: "SKCosmeticListCell", bundle: nil)
         cosmeticListTableView.registerNib(nib, forCellReuseIdentifier: "cosmeticListCell")
 
@@ -92,6 +95,9 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
             cosmeticDetailViewController = segue.destinationViewController as! SKCosmeticDetailViewController
             cosmeticDetailViewController.dummyCosmetic = selectedCosmetic
         }
+    }
+
+    func addCosmeticButtonTapped() {
     }
 
 }
