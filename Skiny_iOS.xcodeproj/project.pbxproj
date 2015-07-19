@@ -86,10 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				ED63CD521B5A8E20005866FF /* Main.storyboard */,
-				ED63CD761B5B1984005866FF /* SKCosmeticDetailViewController.swift */,
 				ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */,
 				ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */,
 				ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */,
+				ED63CD761B5B1984005866FF /* SKCosmeticDetailViewController.swift */,
 				ED63CD721B5A9A67005866FF /* SKCosmeticListCell.swift */,
 				ED63CD731B5A9A67005866FF /* SKCosmeticListCell.xib */,
 				ED63CD551B5A8E20005866FF /* Images.xcassets */,

@@ -35,7 +35,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cosmeticListTableView" destination="E3e-7f-aqB" id="NsZ-RE-APs"/>
-                        <segue destination="j7s-4w-XD7" kind="show" id="fJg-Jx-xL0"/>
+                        <segue destination="j7s-4w-XD7" kind="show" identifier="toCosmeticDetail" id="fJg-Jx-xL0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
