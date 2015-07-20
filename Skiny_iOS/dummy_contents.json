@@ -1,5 +1,5 @@
 {
-  "cosmetic": 
+  "cosmetics": 
   [
     {
       "id": 1,
@@ -46,7 +46,7 @@
       "name": "ファンデーションサンプル",
       "brand": 3,
       "category": 3,
-      "image": "muji_light_toning_water",
+      "image": "",
       "ingredients": [5, 4, 6, 9]
     },
     {
@@ -67,7 +67,51 @@
     }
   ],
 
-  "ingredient": 
+  "brands": 
+  [
+    {
+      "id": 1,
+      "name": "無印良品"
+    },
+    {
+      "id": 2,
+      "name": "CHANEL"
+    },
+    {
+      "id": 3,
+      "name": "JILL STUART"
+    },
+    {
+      "id": 4,
+      "name": "DIOR"
+    }
+  ],
+
+  "categories": 
+  [
+    {
+      "id": 1,
+      "name": "化粧水"
+    },
+    {
+      "id": 2,
+      "name": "乳液"
+    },
+    {
+      "id": 3,
+      "name": "ファンデーション"
+    },
+    {
+      "id": 4,
+      "name": "リップ"
+    },
+    {
+      "id": 5,
+      "name": "下地"
+    }
+  ],
+
+  "ingredients": 
   [
     {
       "id": 1,
@@ -104,50 +148,6 @@
     {
       "id": 9,
       "name": "プルラン"
-    }
-  ],
-
-  "category": 
-  [
-    {
-      "id": 1,
-      "name": "化粧水"
-    },
-    {
-      "id": 2,
-      "name": "乳液"
-    },
-    {
-      "id": 3,
-      "name": "ファンデーション"
-    },
-    {
-      "id": 4,
-      "name": "リップ"
-    },
-    {
-      "id": 5,
-      "name": "下地"
-    }
-  ],
-
-  "brand": 
-  [
-    {
-      "id": 1,
-      "name": "無印良品"
-    },
-    {
-      "id": 2,
-      "name": "CHANEL"
-    },
-    {
-      "id": 3,
-      "name": "JILL STUART"
-    },
-    {
-      "id": 4,
-      "name": "DIOR"
     }
   ]
 }

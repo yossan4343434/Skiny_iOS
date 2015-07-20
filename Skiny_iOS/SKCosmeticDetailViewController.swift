@@ -33,7 +33,7 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
         if let path = NSBundle.mainBundle().pathForResource("dummy_contents", ofType: "json") {
             if let jsonData = NSData(contentsOfFile: path) {
                 let jsonResult  = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
-                let jsonResultIngredients = jsonResult["ingredient"] as! NSArray
+                let jsonResultIngredients = jsonResult["ingredients"] as! NSArray
 
                 for ingredientId in dummyCosmetic.ingredientIds {
                     var dummyIngredient = SKIngredient()

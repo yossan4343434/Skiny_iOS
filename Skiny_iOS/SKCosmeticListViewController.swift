@@ -35,9 +35,9 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
         if let path = NSBundle.mainBundle().pathForResource("dummy_contents", ofType: "json") {
             if let jsonData = NSData(contentsOfFile: path) {
                 let jsonResult = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
-                let jsonResultCosmetics = jsonResult["cosmetic"] as! NSArray
-                let jsonResultBrand = jsonResult["brand"] as! NSArray
-                let jsonResultCategory = jsonResult["category"] as! NSArray
+                let jsonResultCosmetics = jsonResult["cosmetics"] as! NSArray
+                let jsonResultBrand = jsonResult["brands"] as! NSArray
+                let jsonResultCategory = jsonResult["categories"] as! NSArray
 
                 for jsonResultCosmetic in jsonResultCosmetics {
                     var dummyCosmetic = SKCosmetic()
@@ -47,9 +47,9 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
 
                     dummyCosmetic.id = jsonResultCosmetic["id"] as! Int
                     dummyCosmetic.name = jsonResultCosmetic["name"] as! String
-                    dummyCosmetic.image = jsonResultCosmetic["image"] as! String
                     dummyCosmetic.brand = jsonResultBrand[brandId - 1]["name"] as! String
                     dummyCosmetic.category = jsonResultCategory[categoryId - 1]["name"] as! String
+                    dummyCosmetic.image = jsonResultCosmetic["image"] as! String
                     dummyCosmetic.ingredientIds = jsonResultCosmetic["ingredients"] as! [Int]
 
                     dummyCosmetics.append(dummyCosmetic)
