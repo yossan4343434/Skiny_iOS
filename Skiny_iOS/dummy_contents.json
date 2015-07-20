@@ -3,34 +3,66 @@
   [
     {
       "id": 1,
-      "name": "化粧水・敏感肌用 しっとりタイプ",
-      "brand": "無印良品",
-      "category": "化粧水",
+      "name": "化粧水敏感肌用 しっとりタイプ",
+      "brand": 1,
+      "category": 1,
       "image": "muji_sensitive_skin_light_toning_water_moisture",
       "ingredients": [1, 3, 4, 5]
     },
     {
       "id": 2,
       "name": "エイジング化粧水 さっぱりタイプ",
-      "brand": "無印良品",
-      "category": "化粧水",
+      "brand": 1,
+      "category": 1,
       "image": "muji_aging_light_toning_water_light",
       "ingredients": [2, 1, 3, 4]
     },
     {
       "id": 3,
       "name": "オーガニック保湿化粧液",
-      "brand": "無印良品",
-      "category": "化粧液",
+      "brand": 1,
+      "category": 1,
       "image": "muji_moist_essence_lotion",
       "ingredients": [2, 6, 5, 8]
     },
     {
       "id": 4,
       "name": "バランス肌用化粧水",
-      "brand": "無印良品",
-      "category": "化粧水",
+      "brand": 1,
+      "category": 1,
       "image": "muji_light_toning_water",
+      "ingredients": [5, 4, 6, 9]
+    },
+    {
+      "id": 5,
+      "name": "乳液サンプル",
+      "brand": 2,
+      "category": 2,
+      "image": "muji_sensitive_skin_light_toning_water_moisture",
+      "ingredients": [5, 4, 6, 9]
+    },
+    {
+      "id": 6,
+      "name": "ファンデーションサンプル",
+      "brand": 3,
+      "category": 3,
+      "image": "muji_light_toning_water",
+      "ingredients": [5, 4, 6, 9]
+    },
+    {
+      "id": 7,
+      "name": "リップサンプル",
+      "brand": 4,
+      "category": 4,
+      "image": "muji_light_toning_water",
+      "ingredients": [5, 4, 6, 9]
+    },
+    {
+      "id": 8,
+      "name": "下地サンプル",
+      "brand": 2,
+      "category": 5,
+      "image": "muji_moist_essence_lotion",
       "ingredients": [5, 4, 6, 9]
     }
   ],
@@ -72,6 +104,50 @@
     {
       "id": 9,
       "name": "プルラン"
+    }
+  ],
+
+  "category": 
+  [
+    {
+      "id": 1,
+      "name": "化粧水"
+    },
+    {
+      "id": 2,
+      "name": "乳液"
+    },
+    {
+      "id": 3,
+      "name": "ファンデーション"
+    },
+    {
+      "id": 4,
+      "name": "リップ"
+    },
+    {
+      "id": 5,
+      "name": "下地"
+    }
+  ],
+
+  "brand": 
+  [
+    {
+      "id": 1,
+      "name": "無印良品"
+    },
+    {
+      "id": 2,
+      "name": "CHANEL"
+    },
+    {
+      "id": 3,
+      "name": "JILL STUART"
+    },
+    {
+      "id": 4,
+      "name": "DIOR"
     }
   ]
 }
