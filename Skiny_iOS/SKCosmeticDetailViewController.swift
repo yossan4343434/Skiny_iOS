@@ -18,9 +18,9 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let cosmeticeListCellNib: UINib = UINib(nibName: "SKCosmeticListCell", bundle: nil)
+        let cosmeticListCellNib: UINib = UINib(nibName: "SKCosmeticListCell", bundle: nil)
         let ingredientListCellNib: UINib = UINib(nibName: "SKIngredientListCell", bundle: nil)
-        cosmeticDetailTableView.registerNib(cosmeticeListCellNib, forCellReuseIdentifier: "cosmeticListCell")
+        cosmeticDetailTableView.registerNib(cosmeticListCellNib, forCellReuseIdentifier: "cosmeticListCell")
         cosmeticDetailTableView.registerNib(ingredientListCellNib, forCellReuseIdentifier: "ingredientListCell")
 
         cosmeticDetailTableView.delegate = self
