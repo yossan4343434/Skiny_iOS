@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED449D051B5C89A90046B709 /* SKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED449D041B5C89A90046B709 /* SKCategory.swift */; };
+		ED449D071B5C89B50046B709 /* SKBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED449D061B5C89B50046B709 /* SKBrand.swift */; };
 		ED49E8091B5C6CF200D791AB /* SKSelectCosmeticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49E8081B5C6CF200D791AB /* SKSelectCosmeticViewController.swift */; };
 		ED49E80C1B5C712900D791AB /* SKSelectOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49E80A1B5C712900D791AB /* SKSelectOptionCell.swift */; };
 		ED49E80D1B5C712900D791AB /* SKSelectOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED49E80B1B5C712900D791AB /* SKSelectOptionCell.xib */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED449D041B5C89A90046B709 /* SKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCategory.swift; sourceTree = "<group>"; };
+		ED449D061B5C89B50046B709 /* SKBrand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKBrand.swift; sourceTree = "<group>"; };
 		ED49E8081B5C6CF200D791AB /* SKSelectCosmeticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSelectCosmeticViewController.swift; sourceTree = "<group>"; };
 		ED49E80A1B5C712900D791AB /* SKSelectOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSelectOptionCell.swift; sourceTree = "<group>"; };
 		ED49E80B1B5C712900D791AB /* SKSelectOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKSelectOptionCell.xib; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				ED63CD521B5A8E20005866FF /* Main.storyboard */,
 				ED63CD4E1B5A8E20005866FF /* AppDelegate.swift */,
 				ED63CD6E1B5A92A5005866FF /* SKCosmetic.swift */,
+				ED449D061B5C89B50046B709 /* SKBrand.swift */,
+				ED449D041B5C89A90046B709 /* SKCategory.swift */,
 				ED63CD7C1B5B2E3B005866FF /* SKIngredient.swift */,
 				ED63CD701B5A95CE005866FF /* SKCosmeticListViewController.swift */,
 				ED63CD761B5B1984005866FF /* SKCosmeticDetailViewController.swift */,
@@ -252,9 +258,11 @@
 				ED63CD771B5B1984005866FF /* SKCosmeticDetailViewController.swift in Sources */,
 				ED63CD6F1B5A92A5005866FF /* SKCosmetic.swift in Sources */,
 				ED49E80C1B5C712900D791AB /* SKSelectOptionCell.swift in Sources */,
+				ED449D051B5C89A90046B709 /* SKCategory.swift in Sources */,
 				ED63CD711B5A95CE005866FF /* SKCosmeticListViewController.swift in Sources */,
 				ED49E8091B5C6CF200D791AB /* SKSelectCosmeticViewController.swift in Sources */,
 				ED63CD741B5A9A67005866FF /* SKCosmeticListCell.swift in Sources */,
+				ED449D071B5C89B50046B709 /* SKBrand.swift in Sources */,
 				ED63CD7A1B5B249F005866FF /* SKIngredientListCell.swift in Sources */,
 				ED63CD7D1B5B2E3B005866FF /* SKIngredient.swift in Sources */,
 				ED63CD4F1B5A8E20005866FF /* AppDelegate.swift in Sources */,
