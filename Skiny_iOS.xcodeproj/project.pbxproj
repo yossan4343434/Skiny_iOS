@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		ED449D051B5C89A90046B709 /* SKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED449D041B5C89A90046B709 /* SKCategory.swift */; };
 		ED449D071B5C89B50046B709 /* SKBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED449D061B5C89B50046B709 /* SKBrand.swift */; };
+		ED449D151B5D456F0046B709 /* CosmeticData.json in Resources */ = {isa = PBXBuildFile; fileRef = ED449D141B5D456F0046B709 /* CosmeticData.json */; };
 		ED49E8091B5C6CF200D791AB /* SKSelectCosmeticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49E8081B5C6CF200D791AB /* SKSelectCosmeticViewController.swift */; };
 		ED49E80C1B5C712900D791AB /* SKSelectOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49E80A1B5C712900D791AB /* SKSelectOptionCell.swift */; };
 		ED49E80D1B5C712900D791AB /* SKSelectOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED49E80B1B5C712900D791AB /* SKSelectOptionCell.xib */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		ED449D041B5C89A90046B709 /* SKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCategory.swift; sourceTree = "<group>"; };
 		ED449D061B5C89B50046B709 /* SKBrand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKBrand.swift; sourceTree = "<group>"; };
+		ED449D141B5D456F0046B709 /* CosmeticData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CosmeticData.json; sourceTree = "<group>"; };
 		ED49E8081B5C6CF200D791AB /* SKSelectCosmeticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSelectCosmeticViewController.swift; sourceTree = "<group>"; };
 		ED49E80A1B5C712900D791AB /* SKSelectOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSelectOptionCell.swift; sourceTree = "<group>"; };
 		ED49E80B1B5C712900D791AB /* SKSelectOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKSelectOptionCell.xib; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				ED63CD4D1B5A8E20005866FF /* Info.plist */,
 				ED63CD7E1B5B30A4005866FF /* dummy_contents.json */,
+				ED449D141B5D456F0046B709 /* CosmeticData.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				ED63CD7B1B5B249F005866FF /* SKIngredientListCell.xib in Resources */,
 				ED49E80D1B5C712900D791AB /* SKSelectOptionCell.xib in Resources */,
+				ED449D151B5D456F0046B709 /* CosmeticData.json in Resources */,
 				ED63CD751B5A9A67005866FF /* SKCosmeticListCell.xib in Resources */,
 				ED63CD541B5A8E20005866FF /* Main.storyboard in Resources */,
 				ED63CD591B5A8E20005866FF /* LaunchScreen.xib in Resources */,

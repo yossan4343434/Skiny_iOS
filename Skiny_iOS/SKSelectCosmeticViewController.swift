@@ -45,7 +45,7 @@ class SKSelectCosmeticViewController: UIViewController, UITableViewDelegate, UIT
     }
 
     func loadData() {
-        if let path = NSBundle.mainBundle().pathForResource("dummy_contents", ofType: "json") {
+        if let path = NSBundle.mainBundle().pathForResource("CosmeticData", ofType: "json") {
             if let jsonData = NSData(contentsOfFile: path) {
                 let jsonResult = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
                 if selectType == 0 {
@@ -69,8 +69,8 @@ class SKSelectCosmeticViewController: UIViewController, UITableViewDelegate, UIT
                             var brandId = jsonResultCosmetic["brand"] as! Int
 
                             var brand = SKBrand()
-                            brand.id = jsonResultBrands[brandId - 1]["id"] as! Int
-                            brand.name = jsonResultBrands[brandId - 1]["name"] as! String
+                            brand.id = jsonResultBrands[brandId]["id"] as! Int
+                            brand.name = jsonResultBrands[brandId]["name"] as! String
 
                             brands.append(brand)
                         }

@@ -10,8 +10,8 @@ import UIKit
 
 class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var dummyCosmetic = SKCosmetic()
-    var dummyIngredients = [SKIngredient]()
+    var cosmetic = SKCosmetic()
+    var ingredients = [SKIngredient]()
 
     @IBOutlet weak var cosmeticDetailTableView: UITableView!
 
@@ -30,18 +30,18 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
     }
 
     func loadData() {
-        if let path = NSBundle.mainBundle().pathForResource("dummy_contents", ofType: "json") {
+        if let path = NSBundle.mainBundle().pathForResource("CosmeticData", ofType: "json") {
             if let jsonData = NSData(contentsOfFile: path) {
                 let jsonResult  = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
                 let jsonResultIngredients = jsonResult["ingredients"] as! NSArray
 
-                for ingredientId in dummyCosmetic.ingredientIds {
-                    var dummyIngredient = SKIngredient()
+                for ingredientId in cosmetic.ingredientIds {
+                    var ingredient = SKIngredient()
 
-                    dummyIngredient.id = jsonResultIngredients[ingredientId - 1]["id"] as! Int
-                    dummyIngredient.name = jsonResultIngredients[ingredientId - 1]["name"] as! String
+                    ingredient.id = jsonResultIngredients[ingredientId]["id"] as! Int
+                    ingredient.name = jsonResultIngredients[ingredientId]["name"] as! String
 
-                    dummyIngredients.append(dummyIngredient)
+                    ingredients.append(ingredient)
                 }
             }
         }
@@ -59,7 +59,7 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
         if section == 0 {
             return 1
         } else {
-            return dummyIngredients.count
+            return ingredients.count
         }
     }
 
@@ -67,17 +67,17 @@ class SKCosmeticDetailViewController: UIViewController, UITableViewDelegate, UIT
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier("cosmeticListCell", forIndexPath: indexPath) as! SKCosmeticListCell
 
-            cell.cosmeticNameLabel.text = dummyCosmetic.name as String
-            cell.cosmeticBrandLabel.text = dummyCosmetic.brand as String
-            cell.cosmeticCategoryLabel.text = dummyCosmetic.category as String
-            let imageName = NSString(string: dummyCosmetic.image as String)
+            cell.cosmeticNameLabel.text = cosmetic.name as String
+            cell.cosmeticBrandLabel.text = cosmetic.brand as String
+            cell.cosmeticCategoryLabel.text = cosmetic.category as String
+            let imageName = NSString(string: cosmetic.image as String)
             cell.cosmeticImageView.image = UIImage(named: imageName as String)
 
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("ingredientListCell", forIndexPath: indexPath) as! SKIngredientListCell
 
-            cell.ingredientNameLabel.text = dummyIngredients[indexPath.row].name as String
+            cell.ingredientNameLabel.text = ingredients[indexPath.row].name as String
 
             return cell
         }

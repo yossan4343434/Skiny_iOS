@@ -10,7 +10,7 @@ import UIKit
 
 class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var dummyCosmetics = [SKCosmetic]()
+    var cosmetics = [SKCosmetic]()
     var selectedCosmetic = SKCosmetic()
 
     @IBOutlet weak var cosmeticListTableView: UITableView!
@@ -35,7 +35,7 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
     }
 
     func loadData() {
-        if let path = NSBundle.mainBundle().pathForResource("dummy_contents", ofType: "json") {
+        if let path = NSBundle.mainBundle().pathForResource("CosmeticData", ofType: "json") {
             if let jsonData = NSData(contentsOfFile: path) {
                 let jsonResult = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
                 let jsonResultCosmetics = jsonResult["cosmetics"] as! NSArray
@@ -43,37 +43,37 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
                 let jsonResultCategories = jsonResult["categories"] as! NSArray
 
                 for jsonResultCosmetic in jsonResultCosmetics {
-                    var dummyCosmetic = SKCosmetic()
+                    var cosmetic = SKCosmetic()
 
                     var brandId = jsonResultCosmetic["brand"] as! Int
                     var categoryId = jsonResultCosmetic["category"] as! Int
 
-                    dummyCosmetic.id = jsonResultCosmetic["id"] as! Int
-                    dummyCosmetic.name = jsonResultCosmetic["name"] as! String
-                    dummyCosmetic.brand = jsonResultBrands[brandId - 1]["name"] as! String
-                    dummyCosmetic.category = jsonResultCategories[categoryId - 1]["name"] as! String
-                    dummyCosmetic.image = jsonResultCosmetic["image"] as! String
-                    dummyCosmetic.ingredientIds = jsonResultCosmetic["ingredients"] as! [Int]
+                    cosmetic.id = jsonResultCosmetic["id"] as! Int
+                    cosmetic.name = jsonResultCosmetic["name"] as! String
+                    cosmetic.brand = jsonResultBrands[brandId]["name"] as! String
+                    cosmetic.category = jsonResultCategories[categoryId]["name"] as! String
+                    cosmetic.image = jsonResultCosmetic["image"] as! String
+                    cosmetic.ingredientIds = jsonResultCosmetic["ingredients"] as! [Int]
 
-                    dummyCosmetics.append(dummyCosmetic)
+                    cosmetics.append(cosmetic)
                 }
             }
         }
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dummyCosmetics.count
+        return cosmetics.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: SKCosmeticListCell = tableView.dequeueReusableCellWithIdentifier("cosmeticListCell", forIndexPath: indexPath) as! SKCosmeticListCell
 
-        var dummyCosmetic = dummyCosmetics[indexPath.row]
+        var cosmetic = cosmetics[indexPath.row]
 
-        cell.cosmeticNameLabel.text = dummyCosmetic.name as String
-        cell.cosmeticBrandLabel.text = dummyCosmetic.brand as String
-        cell.cosmeticCategoryLabel.text = dummyCosmetic.category as String
-        let imageName = NSString(string: dummyCosmetic.image as String)
+        cell.cosmeticNameLabel.text = cosmetic.name as String
+        cell.cosmeticBrandLabel.text = cosmetic.brand as String
+        cell.cosmeticCategoryLabel.text = cosmetic.category as String
+        let imageName = NSString(string: cosmetic.image as String)
         cell.cosmeticImageView.image = UIImage(named: imageName as String)
 
         return cell
@@ -84,7 +84,7 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedCosmetic = dummyCosmetics[indexPath.row]
+        selectedCosmetic = cosmetics[indexPath.row]
         performSegueWithIdentifier("toCosmeticDetail", sender: nil)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
@@ -93,7 +93,7 @@ class SKCosmeticListViewController: UIViewController, UITableViewDelegate, UITab
         if segue.identifier == "toCosmeticDetail" {
             var cosmeticDetailViewController = SKCosmeticDetailViewController()
             cosmeticDetailViewController = segue.destinationViewController as! SKCosmeticDetailViewController
-            cosmeticDetailViewController.dummyCosmetic = selectedCosmetic
+            cosmeticDetailViewController.cosmetic = selectedCosmetic
         } else if segue.identifier == "toSelectCategory" {
             var selectCosmeticViewController = SKSelectCosmeticViewController()
             selectCosmeticViewController = segue.destinationViewController as! SKSelectCosmeticViewController
