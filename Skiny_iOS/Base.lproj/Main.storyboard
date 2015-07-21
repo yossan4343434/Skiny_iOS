@@ -36,6 +36,7 @@
                     <connections>
                         <outlet property="cosmeticListTableView" destination="E3e-7f-aqB" id="NsZ-RE-APs"/>
                         <segue destination="j7s-4w-XD7" kind="show" identifier="toCosmeticDetail" id="fJg-Jx-xL0"/>
+                        <segue destination="krl-bd-zJR" kind="show" identifier="toSelectCategory" id="uj9-Cr-aVj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,6 +76,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HyC-o3-z5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1784" y="-327"/>
+        </scene>
+        <!--Select Cosmetic View Controller-->
+        <scene sceneID="z3s-dX-wYE">
+            <objects>
+                <viewController storyboardIdentifier="selectBrandViewController" id="4Dc-2y-a5s" customClass="SKSelectCosmeticViewController" customModule="Skiny_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3zW-GY-RFq"/>
+                        <viewControllerLayoutGuide type="bottom" id="MxJ-5H-EBh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bxd-To-Jl0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-iN-xvQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a3N-iN-xvQ" secondAttribute="trailing" id="9ab-Qc-rXo"/>
+                            <constraint firstItem="a3N-iN-xvQ" firstAttribute="leading" secondItem="Bxd-To-Jl0" secondAttribute="leading" id="Fsu-L3-xUm"/>
+                            <constraint firstItem="a3N-iN-xvQ" firstAttribute="top" secondItem="Bxd-To-Jl0" secondAttribute="top" id="I2H-lk-7Ql"/>
+                            <constraint firstItem="MxJ-5H-EBh" firstAttribute="top" secondItem="a3N-iN-xvQ" secondAttribute="bottom" id="JRn-pS-h6C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fxw-4U-XeF">
+                        <barButtonItem key="backBarButtonItem" title=" " id="cpp-rx-Zmm"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="selectBrandTableView" destination="a3N-iN-xvQ" id="sWo-Cd-uht"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z88-YV-Lol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784" y="465"/>
+        </scene>
+        <!--Select Cosmetic View Controller-->
+        <scene sceneID="nsM-27-IVZ">
+            <objects>
+                <viewController storyboardIdentifier="selectCategoryViewController" id="krl-bd-zJR" customClass="SKSelectCosmeticViewController" customModule="Skiny_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="22Q-Jv-5Z3"/>
+                        <viewControllerLayoutGuide type="bottom" id="60W-UI-qTw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gsG-BL-NgN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QDq-hK-5Qj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QDq-hK-5Qj" secondAttribute="bottom" id="Hxh-0r-kkW"/>
+                            <constraint firstItem="QDq-hK-5Qj" firstAttribute="top" secondItem="gsG-BL-NgN" secondAttribute="top" id="M30-X4-hEs"/>
+                            <constraint firstItem="QDq-hK-5Qj" firstAttribute="leading" secondItem="gsG-BL-NgN" secondAttribute="leading" id="c7A-On-9Ke"/>
+                            <constraint firstAttribute="trailing" secondItem="QDq-hK-5Qj" secondAttribute="trailing" id="hlR-qY-80z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yaP-MZ-qU7">
+                        <barButtonItem key="backBarButtonItem" title=" " id="xBE-mm-NI5"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="selectCategoryTableView" destination="QDq-hK-5Qj" id="fKs-eh-pmX"/>
+                        <segue destination="4Dc-2y-a5s" kind="show" identifier="toSelectBrand" id="aHk-Kh-scd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deL-vE-Wjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="465"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dJs-OU-mg5">
